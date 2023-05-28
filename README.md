@@ -6,4 +6,8 @@ So far, only a wardrobe challenge player has been implemented. It somehow doesn'
 
 ## Run the program
 
-```go run .```
+Change the credentials in the `variables.go` file
+
+```
+go run .
+```

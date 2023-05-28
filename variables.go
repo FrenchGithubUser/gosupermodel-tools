@@ -2,8 +2,8 @@ package main
 
 import "image"
 
-var username string = "komas44486"
-var password string = "azerty123"
+var username string = ""
+var password string = ""
 
 var currentStepScreenshot image.Image
 
