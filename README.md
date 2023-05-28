@@ -6,4 +6,4 @@ So far, only a wardrobe challenge player has been implemented. It somehow doesn'
 
 ## Run the program
 
-`go run .`
+```go run .```
