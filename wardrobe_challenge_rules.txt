@@ -1,0 +1,28 @@
+Here is a game and its rules : 
+
+- there is a grid of items (11 rows and 12 columns)
+- there are 4 different kind of items
+- the 132 slots on the grid are initially filled randomly with 1 item per slot
+- a group is defined by at least 2 items of the same kind, next to each other (above, below, to the right or to the left of each other)
+- the goal is to remove all the items from the grid
+- items can be removed if they form a group, one group at a time
+- after a group is removed, the blanks that are below a column are filled by moving the items that are above the blank, down
+- after a group is removed, the blanks that are to the right of a column are filled by moving the whole column to the right, filling the blank
+- no more items are added after the game starts
+- if an item is left alone on the whole grid, it will never be able to be removed (as only group of items can be removed)
+- the game ends when all the items are removed, or if no group exists anymore
+- When a group is removed, all the items from the group are removed at once
+- when blanks appear, they are automatically filled (following the previous rules), before the next group can be removed
+
+
+chatGPT's strategy :
+
+    Look for the largest group of items of the same kind on the grid. If there are multiple groups of the same size, choose the group that is closest to the bottom of the grid.
+    Remove that group of items by clicking on one of the items in the group. This will cause all items in the group to be removed at once.
+    After the group is removed, observe the new arrangement of items on the grid. If there are any new groups of items of the same kind that are adjacent to each other, remove them.
+    If no new groups are formed, look for the next largest group of items of the same kind on the grid and repeat steps 2 and 3 until no more groups can be removed.
+    After each group is removed, wait for the blanks to be filled automatically before looking for the next group to remove.
+    If there are any blank spaces to the right of a column after removing a group, move the entire column to the right to fill the space.
+    Repeat steps 1-6 until all items are removed from the grid or until no more groups can be removed.
+
+This modified strategy adds a step to wait for the blanks to be filled automatically after each group is removed before looking for the next group to remove. This ensures that all the items are in their correct positions before the next group is removed. The strategy still prioritizes removing the largest group of items first and then works its way down to smaller groups. It also includes moving the entire column to the right to fill any blank spaces that may appear. By following this strategy, you should be able to remove all the items from the grid and win the game.
